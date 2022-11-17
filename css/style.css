@@ -1,0 +1,390 @@
+:root {
+  --name-color: black;
+  --namefotter-color: white;
+  --fotter-color: #2f303a;
+  --menu-color: #212121;
+  --main-color: #212121;
+  --body-color: #212121;
+  --textlorem-color: #757575;
+  --team-color: #f5f4fa;
+  --spirt-color: #afb1b8;
+  --active-color: #2196f3;
+  --headerborder-color: #ECECEC;
+}
+body {
+  color: var(--body-color);
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+ul {
+  list-style-type: none;
+}
+.header {
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+}
+.headerportfolio{
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+  border-bottom: 1px solid var(--headerborder-color);
+}
+.name {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--name-color);
+  cursor: pointer;
+}
+.web-color {
+  color: #2196f3;
+}
+.menu {
+  display: flex;
+  gap: 46px;
+  padding-left: 93px;
+}
+.item {
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--menu-color);
+  cursor: pointer;
+}
+.item:hover {
+  color: var(--active-color);
+}
+.item:focus {
+  color: var(--active-color);
+}
+.headercontact {
+  display: inline-flex;
+  gap: 50px;
+  padding-left: 345px;
+}
+.hcontact {
+  justify-content: flex-end;
+}
+.contact {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.14;
+  cursor: pointer;
+}
+.contact:hover {
+  color: var(--active-color);
+}
+.contact:focus {
+  color: var(--active-color);
+}
+.contact-icon:hover {
+  fill: var(--active-color);
+}
+.contact-icon:focus {
+  fill: var(--active-color);
+}
+/* Heder i ogólne body */
+.main {
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/tło-img.jpg);
+  background-size: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--main-color);
+}
+.maintext {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900px;
+  font-size: 44px;
+  line-height: 1.36;
+  width: 696px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  text-transform: uppercase;
+}
+.mainbutton {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  cursor: pointer;
+  background-color: #2196f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  margin: 0 auto;
+}
+.lorem-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--team-color);
+  border-radius: 4px;
+}
+.lorem {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.headline {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 17;
+}
+.textlorem {
+  font-size: 14px;
+  line-height: 1, 71;
+  color: var(--textlorem-color);
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 4);
+}
+.whatwedo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.mainimg {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.team {
+  background-color: var(--team-color);
+  padding-bottom: 94px;
+}
+.team-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.teamimg {
+  display: flex;
+  width: 1200px;
+  gap: 30px;
+  padding: 0;
+}
+.imgteam {
+  background-color: #ffffff;
+  flex-basis: calc((100%-90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.imgname-team {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+}
+.text-team {
+  text-align: center;
+}
+.mi {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.teamsignature {
+  background-color: #ffffff;
+}
+.social {
+  background-color: #ffffff;
+  fill: #afb1b8;
+}
+.social:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+  fill: #ffffff;
+}
+.social:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+  fill: #ffffff;
+}
+.our-clients {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.clients {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.logo {
+  fill: var(--spirt-color);
+  border-radius: 4px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+}
+.logo:hover {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+.logo:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+
+/* Początek footera */
+.fotter {
+  background-color: #2f303a;
+}
+.both {
+  display: flex;
+}
+.right {
+  padding-left: 70px;
+}
+.namefotter {
+  text-decoration: none;
+  color: var(--namefotter-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  cursor: pointer;
+}
+.namefotter:hover {
+  color: #2196f3;
+}
+.namefotter:focus {
+  color: #2196f3;
+}
+.location {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1, 71;
+  cursor: pointer;
+}
+.location:hover {
+  color: #2196f3;
+  cursor: pointer;
+}
+.location:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
+.joinus {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 17;
+  color: #ffffff;
+}
+.social-fotter {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: #ffffff;
+}
+.social-fotter:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+.social-fotter:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
+/* Tu kończy się css dla strony głównej */
+.filtrs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  border-bottom: #ffffff;
+}
+.filtr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-color: var(--team-color);
+  border-radius: 4px;
+}
+.filtr:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filtr:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolioimg {
+  flex-basis: calc((100% - 60px) / 3);
+  max-width: 370px;
+  border: 1px solid #EEEEEE;
+  background-color: #FFFFFF;
+  
+}
+.portfolioimg:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolioimg:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.pi {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.imgname {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.text{
+  padding-bottom: 20px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
