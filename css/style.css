@@ -84,17 +84,15 @@ ul {
   line-height: 1.14;
   cursor: pointer;
 }
+.contact-icon{
+  fill: currentColor;
+  margin-right: 10px;
+}
 .contact:hover {
   color: var(--active-color);
 }
 .contact:focus {
   color: var(--active-color);
-}
-.contact-icon:hover {
-  fill: var(--active-color);
-}
-.contact-icon:focus {
-  fill: var(--active-color);
 }
 /* Heder i ogólne body */
 .main {
@@ -135,6 +133,10 @@ ul {
   border-radius: 4px;
   display: flex;
   margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
 }
 .lorem-icon {
   display: flex;
@@ -196,6 +198,8 @@ ul {
   padding: 0;
 }
 .imgteam {
+  width: 270px;
+  height: 428px;
   background-color: #ffffff;
   flex-basis: calc((100%-90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -207,9 +211,13 @@ ul {
   font-size: 18px;
   line-height: 2;
   text-align: center;
+  margin: 0 ;
+  padding-top: 30px;
 }
 .text-team {
+  margin: 0px;
   text-align: center;
+  padding-top: 10px;
 }
 .mi {
   max-width: 100%;
@@ -218,6 +226,12 @@ ul {
 }
 .teamsignature {
   background-color: #ffffff;
+}
+.socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .social {
   background-color: #ffffff;
@@ -326,6 +340,7 @@ ul {
   gap: 8px;
   justify-content: center;
   border-bottom: #ffffff;
+  padding-bottom: 50px;
 }
 .filtr {
   font-weight: 500;
@@ -352,16 +367,21 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .img {
+  padding-top: 50px;
+  max-width: 1200px;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding: 0;
 }
 .portfolioimg {
   flex-basis: calc((100% - 60px) / 3);
-  max-width: 370px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eEEEEE;
   background-color: #FFFFFF;
-  
+  box-sizing: border-box;
+
 }
 .portfolioimg:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -371,6 +391,10 @@ ul {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.fit{
+  margin: 0;
+}
+
 .pi {
   max-width: 100%;
   width: 100%;
@@ -380,9 +404,10 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  padding-left: 24px;
 }
 .text{
-  padding-bottom: 20px;
+  padding-left: 24px;
 }
 .container {
   width: 1200px;
