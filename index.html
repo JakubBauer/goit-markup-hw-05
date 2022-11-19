@@ -22,12 +22,12 @@
     <header>
       <div class="container">
         <div class="header">
-          <a class="name" href="https://webstudio.com"><span class="web-color">Web</span>Studio</a>
+          <a class="name" href="index.html"><span class="web-color">Web</span>Studio</a>
           <nav>
             <ul class="menu">
-              <li><a class="item" href="https://webstudioagencja.com">Agencja</a></li>
-              <li><a class="item" href="portfolio.html">Portfolio</a></li>
-              <li><a class="item" href="https://webstudiokontakt.com">Kontakt</a></li>
+              <li><a class="header-agencja", href="index.html">Agencja</a></li>
+              <li><a class="unactive", href="portfolio.html">Portfolio</a></li>
+              <li><a class="header-kontakt" href="index.html">Kontakt</a></li>
             </ul>
           </nav>
           <ul class="headercontact">
@@ -58,7 +58,7 @@
           <div class="center">
             <h1 class="maintext">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
 
-            <button class="mainbutton" type="button">Zamów usługe</button>
+            <button class="mainbutton" type="button" data-modal-open>Zamów usługe</button>
           </div>
         </div>
       </section>
@@ -141,13 +141,19 @@
           <h2 class="whatwedo">Czym się zajmujemy</h2>
           <ul class="mainimg">
             <li>
+              <div class="grey-box">
               <img src="images/Mail.jpg" alt="Mail" width="370" height="294" />
+              <div class="grey-text"><p>Aplikacje komputerowe</p></div></div>
             </li>
             <li>
+              <div class="grey-box">
               <img src="images/Phone.jpg" alt="Phone" width="370" height="294" />
+              <div class="grey-text"><p>Aplikacje mobilne</p></div></div>
             </li>
             <li>
+              <div class="grey-box">
               <img src="images/design.jpg" alt="Design" width="370" height="294" />
+              <div class="grey-text"><p>Rozwiązania graficzne</p></div></div>
             </li>
           </ul>
         </div>
@@ -511,5 +517,11 @@
         </section>
       </sectionc>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-bnt" data-modal-close>x</button>
+    </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
