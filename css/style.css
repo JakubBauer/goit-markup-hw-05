@@ -636,6 +636,8 @@ text-transform: uppercase;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transform: scaleX(0.75);
+  transform: translate(-100%,-100%);
 }
 .modal{
   position: absolute;
@@ -645,12 +647,13 @@ text-transform: uppercase;
   width: 528px;
   min-height: 581px;
   background-color:#FFFFFF;
+  opacity: inherit; 
   visibility: inherit;
+  transition-property: all;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-  transition-property:  visibility, opacity;
   transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); ;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal>button{
   position: absolute;
